@@ -71,7 +71,7 @@ p {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #D3ED05;
+  background: #ffffff;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -130,3 +130,159 @@ ul.dropdown-menu {
 .dropdown-menu li {
   padding: 6px 10px;
 }
+
+/* section */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: #D3ED05;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title h2,
+.section-title h3 {
+  font-size: 58px;
+  line-height: 82px;
+  letter-spacing: -2.22917px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  color: #FFFFFF;
+  font-size: 20.0625px;
+  opacity: 0.6;
+}
+
+/* header */
+.header {
+  z-index: 999;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  padding: 15px 0;
+  transition: all .6s;
+}
+
+header.sticky {
+  padding: 0px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #030E14;
+}
+
+header.sticky #navbarNav {
+  border-bottom: 0px !important;
+}
+
+header.sticky img {
+  transition: all 0.5s ease-in-out;
+}
+
+/* top banner */
+.top-banner {
+  background: url("/assets/images/top-banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 165px 0;
+}
+
+.top-banner .center-col {
+  text-align: center;
+}
+
+.top-banner .center-col h1 {
+  letter-spacing: -1.94091px;
+  font-weight: 500;
+  font-size: 68.9193px;
+  line-height: 65px;
+  color: #F5F5F5;
+}
+
+.top-banner .center-col p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* end */
+
+/* form */
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-control {
+  resize: none;
+  display: block;
+  width: 100%;
+  padding: 16px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  border: 1px solid #1e1e1e42;
+  color: #ffffff !important;
+  background-color: transparent;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: #D3ED05;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+::-webkit-input-placeholder {
+  color: white !important;
+}
+
+:-ms-input-placeholder {
+  color: white !important;
+}
+
+/* end */
+
+/* Button */
+
+.btn-theme {
+  border: 2px solid #ffffff;
+  padding: 10px 35px;
+  display: inline-block;
+  font-weight: 600;
+  background: #ffffff;
+  color: #252888;
+  transition: all ease-in-out 0.3s;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+.btn-theme:hover {
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* end */
