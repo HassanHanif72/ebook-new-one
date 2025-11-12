@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background: #ffffff;
+  line-height: 1.5;
+  color: #686868;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  color: #000001;
+  margin-top: 0;
+  line-height: 1.5;
+  font-family: "Advent Pro", sans-serif;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #686868;
+}
+
+/* Navbar */
+
+.navbar-nav li {
+  padding: 10px 10px;
+}
+
+.navbar-nav li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff !important;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-nav li a:hover {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+.header.sticky li a {
+  color: white !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #D3ED05;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  left: 0;
+}
+
+ul.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-menu li:hover,
+.dropdown-menu li:hover a {
+  background: white;
+  color: #000001 !important;
+}
+
+
+.navbar-nav li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000001;
+}
+
+.offcanvas {
+  background-color: #030e14;
+}
+
+.offcanvas .navbar-nav .dropdown-menu {
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.offcanvas .navbar-nav .dropdown-menu li,
+.offcanvas .navbar-nav li {
+  padding: 10px 0;
+}
+
+.offcanvas .navbar-nav .dropdown-menu li:hover,
+.offcanvas .navbar-nav .dropdown-menu li:hover a {
+  border-radius: 8px;
+}
+
+.dropdown-menu {
+  background-color: #030e14;
+  border-radius: 0px;
+}
+
+.dropdown-item {
+  background: none !important;
+}
+
+.dropdown-menu li {
+  padding: 6px 10px;
+}
