@@ -1,5 +1,7 @@
 import BookList from "@/_components/BookList";
 import Button from "@/_components/Button";
+import SecFiveContent from "@/_components/SecFiveContent";
+import SecFourBoxContent from "@/_components/SecFourBoxContent";
 import SectionTitle from "@/_components/SectionTitle";
 import TopForm from "@/_components/TopForm";
 import TopSlider from "@/_components/TopSlider";
@@ -106,7 +108,7 @@ export default function Home() {
             <Col xl={8} lg={8} md={8}>
               <SectionTitle
                 heading="We're Your Go-To Platform"
-                colorHeading="for All Your Ghostwriting & Publishing Needs"
+                colorHeading="for All Your Ghostwriting & Publishing Needs"
                 descOne="Looking for top-notch ghostwriting services led by industry experts? Our premium quality work
                 ensures your legacy is marked with the finest words crafted by our experts. Whether you need eBook
                 ghostwriting or book writing service, we've got you covered. From concept to manuscript to the final
@@ -116,66 +118,73 @@ export default function Home() {
             </Col>
           </Row>
           <Row className="g-3">
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
+            <SecFourBoxContent />
+          </Row>
+        </Container>
+      </section>
+      {/* end */}
+      {/* sec-five */}
+      <section className="sec-five">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={6} lg={6} md={6}>
+              <SectionTitle
+                heading="Well Known"
+                colorHeading="Impress Your Readers with Ebooks"
+                HeadingTag="h3"
+              />
             </Col>
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
-            </Col>
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
-            </Col>
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
-            </Col>
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
-            </Col>
-            <Col xl={4} lg={4} md={4}>
-              <div className="sec-four-box">
-                <i className="ri-checkbox-circle-fill"></i>
-                <h4>Article Writing</h4>
-                <p>Let our skilled writers at Ghostwriting Squad
-                  breathe life into your ideas with captivating
-                  and informative articles tailored to your
-                  needs.</p>
-              </div>
-            </Col>
+          </Row>
+          <Row className="align-items-center justify-content-around">
+            <SecFiveContent
+              image="/assets/images/img-2.webp"
+              number="01"
+              title="eBook Writing"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+            />
+
+            <SecFiveContent
+              image="/assets/images/img-3.webp"
+              number="02"
+              title="eBook Editing"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+              reverse={true}
+              whiteText={true}
+            />
+
+            <SecFiveContent
+              image="/assets/images/img-4.webp"
+              number="03"
+              title="eBook Marketing"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+              whiteText={true}
+            />
+
+            <SecFiveContent
+              image="/assets/images/img-5.webp"
+              number="04"
+              title="eBook Publishing"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+              reverse={true}
+              whiteText={true}
+            />
+
+            <SecFiveContent
+              image="/assets/images/img-4.webp"
+              number="05"
+              title="eBook Cover"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+              whiteText={true}
+            />
+
+            <SecFiveContent
+              image="/assets/images/img-5.webp"
+              number="06"
+              title="Children Book"
+              desc="We believe the best way to master makeup skills is through constant practice. Our self makeup course includes Hands on Practice where students actively work on different makeup techniques."
+              reverse={true}
+              whiteText={true}
+            />
           </Row>
         </Container>
       </section>
