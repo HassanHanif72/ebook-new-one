@@ -1,9 +1,15 @@
+'use client'
+import { useModal } from '@/context/ModalContext'
 import React from 'react'
 
+
 const Button = () => {
+
+    const { modalShow } = useModal();
+
     return (
         <div className="btn-sec">
-            <button className="btn btn-theme">Get Started </button>
+            <button onClick={modalShow} className="btn btn-theme">Get Started </button>
         </div>
     )
 }

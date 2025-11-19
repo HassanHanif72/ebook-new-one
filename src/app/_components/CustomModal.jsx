@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Form, Modal } from 'react-bootstrap'
 import toast from 'react-hot-toast';
 
-const CustomModal = () => {
+const CustomModal = () => { 
 
     // modal context
     const { showModal, modalClose } = useModal();

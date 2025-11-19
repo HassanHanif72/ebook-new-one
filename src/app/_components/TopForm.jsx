@@ -18,18 +18,17 @@ const TopForm = () => {
         }
 
         try {
+            // const formData = new FormData(form);
+            // await sendMail(formData);
+            // toast.success('Form submitted successfully!');
+            // form.reset()
             if (true) {
                 toast.success('Form submitted successfully!');
                 form.reset()
             }
         } catch (error) {
-
+            toast.error("Something went wrong!");
         }
-
-        // form sending to email
-        // const formData = new FormData(form);
-        // await sendMail(formData);
-        // end
     };
 
     return (
